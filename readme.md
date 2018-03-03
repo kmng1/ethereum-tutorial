@@ -6,5 +6,6 @@ To check: `npm list -g --depth=0`
 
 `npm install --save solc`   
 `npm install --save mocha ganache-cli web3@1.0.0-beta.26`    
-
+    
+`npm install --save truffle-hdwallet-provider`    
 
