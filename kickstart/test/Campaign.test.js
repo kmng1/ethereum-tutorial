@@ -37,6 +37,7 @@ beforeEach(async () => {
 
   // workaround for web3 1.0.0-beata.26 <-----------------
   factory.setProvider(provider);
+  campaign.setProvider(provider);
 });
 
 describe('Campaigns', () => {
@@ -44,6 +45,10 @@ describe('Campaigns', () => {
     assert.ok(factory.options.address);
     assert.ok(campaign.options.address);
   });
+
+
+
+
 });
 
 
