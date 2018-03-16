@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "dev": "next dev"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^5.0.0",
+    "next": "^4.1.4",
     "npm": "^5.7.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "solc": "^0.4.21",
     "truffle-hdwallet-provider": "0.0.3",
     "web3": "^1.0.0-beta.26"
