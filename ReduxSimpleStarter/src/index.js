@@ -8,8 +8,16 @@ import ReactDOM from 'react-dom';
 
 // const createStoreWithMiddleware = applyMiddleware()(createStore);
 
+import SearchBar from './components/search_bar';
+
+const API_KEY = 'AIzaSyB24sSvUB_J6f9TkqIfCkhBagYqlxjGKlk';
+
 const App = () => {
-  return <div>Hi!</div>;
+  return (
+    <div>
+      <SearchBar />
+    </div>
+);
 };
 
 ReactDOM.render(
