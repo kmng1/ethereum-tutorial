@@ -3,9 +3,9 @@ const ganache = require('ganache-cli');
 const Web3 = require('web3');
 
 // workaround for web3 1.0.0-beata.26 <-----------------
-// const web3 = new Web3(ganache.provider());
-const provider = ganache.provider();
-const web3 = new Web3(provider);
+const web3 = new Web3(ganache.provider());
+// const provider = ganache.provider();
+// const web3 = new Web3(provider);
 
 const compiledFactory = require('../ethereum/build/CampaignFactory.json');
 const compiledCampaign = require('../ethereum/build/Campaign.json');
@@ -36,8 +36,8 @@ beforeEach(async () => {
   );
 
   // workaround for web3 1.0.0-beata.26 <-----------------
-  factory.setProvider(provider);
-  campaign.setProvider(provider);
+//  factory.setProvider(provider);
+//  campaign.setProvider(provider);
 });
 
 describe('Campaigns', () => {
