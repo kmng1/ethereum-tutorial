@@ -1,4 +1,5 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.4.22;
+
 
 contract CampaignFactory {
     address[] public deployedCampaigns;
@@ -36,7 +37,7 @@ contract Campaign {
         _;
     }
 
-    function Campaign(uint minimum, address creator) public {
+    constructor(uint minimum, address creator) public {
         manager = creator;
         minimumContribution = minimum;
     }
@@ -83,11 +84,11 @@ contract Campaign {
 
     function getSummary() public view returns (uint, uint, uint, uint, address) {
         return (
-            minimumContribution,
-            this.balance,
-            requests.length,
-            approversCount,
-            manager
+        minimumContribution,
+        address(this).balance,
+        requests.length,
+        approversCount,
+        manager
         );
     }
 
